@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+.env
+.env.local
+.env*.local
+.vercel
+tsconfig.tsbuildinfo
+gozoptiks material
+data/runtime
+public/uploads
