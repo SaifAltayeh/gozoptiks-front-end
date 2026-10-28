@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { MediaImage as Image } from "@/frontend/media-image";
 import { useState } from "react";
 
 export function ProductGallery({ images, alt }: { images: string[]; alt: string }) {

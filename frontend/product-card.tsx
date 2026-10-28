@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { MediaImage as Image } from "@/frontend/media-image";
 import Link from "next/link";
 import type { Product } from "@/lib/models";
 import { getBrandName } from "@/frontend/catalog";
