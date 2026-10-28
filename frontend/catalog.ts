@@ -6,7 +6,7 @@ import type { Product, ProductFilters, SortKey } from "@/lib/models";
 const API_URL = process.env.API_URL || "http://localhost:4000";
 
 export const loadCatalog = cache(async (): Promise<Database> => {
-  const response = await fetch(`${API_URL}/api/catalog`, { cache: "no-store" });
+  const response = await fetch(`${API_URL}/api/catalog`, { cache: "no-store", next: { revalidate: 0 } });
   if (!response.ok) {
     throw new Error("Catalog is unavailable.");
   }

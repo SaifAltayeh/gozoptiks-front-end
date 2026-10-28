@@ -10,10 +10,7 @@ const nextConfig: NextConfig = {
     qualities: [75, 95, 100],
   },
   async rewrites() {
-    return [
-      { source: "/api/:path*", destination: `${API_URL}/api/:path*` },
-      { source: "/uploads/:path*", destination: `${API_URL}/uploads/:path*` },
-    ];
+    return [{ source: "/uploads/:path*", destination: `${API_URL}/uploads/:path*` }];
   },
 };
 
